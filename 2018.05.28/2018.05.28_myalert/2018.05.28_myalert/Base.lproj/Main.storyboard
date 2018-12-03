@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_018_05_28_myalert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJR-sU-5ru">
+                                <rect key="frame" x="84" y="105" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zv2-5k-OVz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--My Alert-->
+        <scene sceneID="d1E-1A-is7">
+            <objects>
+                <viewController storyboardIdentifier="myalert" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="6WS-e9-UEm" customClass="MyAlert" customModule="_018_05_28_myalert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Rv-yP-fPn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5US-7f-cbt">
+                                <rect key="frame" x="34" y="240.5" width="306" height="186"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYd-C3-Blh">
+                                        <rect key="frame" x="25" y="77.5" width="255" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="255" id="mf9-Hk-QHE"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQe-Wv-zvz">
+                                        <rect key="frame" x="0.0" y="156" width="306" height="30"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="onDismiss:" destination="6WS-e9-UEm" eventType="touchUpInside" id="Fm9-jH-rQ3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="RYd-C3-Blh" firstAttribute="top" secondItem="5US-7f-cbt" secondAttribute="top" constant="77.5" id="50P-A7-bOJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="jQe-Wv-zvz" secondAttribute="trailing" id="6nQ-l3-a8Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="jQe-Wv-zvz" secondAttribute="bottom" id="Jxf-AB-9SJ"/>
+                                    <constraint firstAttribute="width" constant="306" id="X4g-84-S1d"/>
+                                    <constraint firstAttribute="height" constant="186" id="Y8e-L0-STR"/>
+                                    <constraint firstItem="jQe-Wv-zvz" firstAttribute="leading" secondItem="5US-7f-cbt" secondAttribute="leading" id="gMd-mY-n46"/>
+                                    <constraint firstItem="jQe-Wv-zvz" firstAttribute="centerX" secondItem="5US-7f-cbt" secondAttribute="centerX" id="kAg-D2-yIX"/>
+                                    <constraint firstItem="RYd-C3-Blh" firstAttribute="leading" secondItem="5US-7f-cbt" secondAttribute="leading" constant="25" id="mPM-oA-IKl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.69247909330985913" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5US-7f-cbt" firstAttribute="centerY" secondItem="7Rv-yP-fPn" secondAttribute="centerY" id="Kv2-xF-oLG"/>
+                            <constraint firstItem="5US-7f-cbt" firstAttribute="centerX" secondItem="7Rv-yP-fPn" secondAttribute="centerX" id="yQT-mk-4Pg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="laa-9o-AMB"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="5US-7f-cbt" id="UEF-vK-qRR"/>
+                        <outlet property="okBtn" destination="jQe-Wv-zvz" id="YlB-IV-Bgh"/>
+                        <outlet property="text" destination="RYd-C3-Blh" id="nq3-tS-Mek"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcR-N7-fGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1536.8" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>

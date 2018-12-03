@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  2018.06.08_1
+
+  Created by admin on 2018/6/8.
+  Copyright © 2018年 admin. All rights reserved.
+*/
+
+
+"CFBundleDisplayName" = "我的 App";
+
+"NSCameraUsageDescription" = "請授權我使用相機";

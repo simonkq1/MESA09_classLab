@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qoc-uR-bEQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="D4e-w6-pLC">
+            <objects>
+                <viewController id="z5q-dG-eeC" customClass="ViewController" customModule="_018_06_07_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mhe-LE-44d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="el7-0Y-Kvz">
+                                <rect key="frame" x="0.0" y="417" width="375" height="250"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="V6K-kI-6SP" kind="embed" id="s8v-z7-Gil"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Pnr-dC-jpK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYW-rq-PmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.199999999999999" y="-40.029985007496258"/>
+        </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="TWu-r4-7tN">
+            <objects>
+                <viewController id="Qoc-uR-bEQ" customClass="ChartViewController" customModule="_018_06_07_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SB0-nf-aYK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="unh-MF-7xJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0K-hD-1wi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="682"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qeT-cy-9pN">
+            <objects>
+                <viewController id="a6V-EZ-swm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AhQ-Nc-ZeJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0X-yR-R4M">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="Qoc-uR-bEQ" kind="embed" id="qrp-bn-cd2"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y0X-yR-R4M" firstAttribute="top" secondItem="l6c-t7-9ED" secondAttribute="top" id="4Qm-Lj-h7Z"/>
+                            <constraint firstItem="l6c-t7-9ED" firstAttribute="trailing" secondItem="y0X-yR-R4M" secondAttribute="trailing" id="7z6-mA-zw9"/>
+                            <constraint firstItem="y0X-yR-R4M" firstAttribute="leading" secondItem="l6c-t7-9ED" secondAttribute="leading" id="8L1-Zh-6mb"/>
+                            <constraint firstItem="l6c-t7-9ED" firstAttribute="bottom" secondItem="y0X-yR-R4M" secondAttribute="bottom" id="Fdo-8t-D0R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l6c-t7-9ED"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQD-vo-rdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.80000000000001" y="1028.6356821589206"/>
+        </scene>
+        <!--Circle View Controller-->
+        <scene sceneID="3M6-6c-O8G">
+            <objects>
+                <viewController id="V6K-kI-6SP" customClass="CircleViewController" customModule="_018_06_07_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X3b-gk-aSo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbO-ZX-Fdm">
+                                <rect key="frame" x="160" y="142" width="55" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55294117647058827" green="0.47450980392156861" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O2V-FW-diq" firstAttribute="bottom" secondItem="FbO-ZX-Fdm" secondAttribute="bottom" constant="80.5" id="I2X-jB-cgA"/>
+                            <constraint firstItem="FbO-ZX-Fdm" firstAttribute="centerX" secondItem="X3b-gk-aSo" secondAttribute="centerX" id="cbz-tf-d6Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O2V-FW-diq"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="0.51372549019607838" green="0.44313725490196076" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="FbO-ZX-Fdm" id="cQz-On-bMZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stu-dY-pcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861.60000000000002" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>

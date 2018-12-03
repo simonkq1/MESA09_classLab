@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_018_05_31_table" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zZl-D5-aOL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="eUz-Y2-VdK">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eUz-Y2-VdK" id="Bcq-qh-ndV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="BHX-JP-TPI"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LmN-cg-op6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zZl-D5-aOL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Tb-gt-97U"/>
+                            <constraint firstItem="zZl-D5-aOL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8vy-xQ-3hk"/>
+                            <constraint firstItem="zZl-D5-aOL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gcf-7d-rrF"/>
+                            <constraint firstItem="zZl-D5-aOL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="q4o-2Z-bRq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="zZl-D5-aOL" id="QWJ-zX-Arz"/>
+                        <outlet property="tapGestureOutlet" destination="zjA-jg-IqJ" id="MpZ-3F-Jl0"/>
+                        <outlet property="tapGestureOutlet2" destination="J0B-9M-VfS" id="CC8-GT-LXg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zjA-jg-IqJ">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="BYZ-38-t0r" id="MLW-to-B4n"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="J0B-9M-VfS">
+                    <connections>
+                        <action selector="tapGestureAction2:" destination="BYZ-38-t0r" id="qTH-q9-zc2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NqT-lh-dtz">
+            <objects>
+                <viewController id="sdb-nV-dA9" customClass="ViewController" customModule="_018_05_31_table" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8tD-tX-XaT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ea4-BW-cft">
+                                <rect key="frame" x="66" y="96" width="242" height="21"/>
+                                <color key="backgroundColor" red="0.97558480447305107" green="1" blue="0.083505189615243003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="7YS-nt-TQ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ea4-BW-cft" firstAttribute="leading" secondItem="oQ7-Hs-W0x" secondAttribute="leading" constant="66" id="15D-ud-TiN"/>
+                            <constraint firstItem="Ea4-BW-cft" firstAttribute="top" secondItem="oQ7-Hs-W0x" secondAttribute="top" constant="76" id="4Lm-kk-5YZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oQ7-Hs-W0x"/>
+                    </view>
+                    <connections>
+                        <outlet property="lable" destination="Ea4-BW-cft" id="htx-f3-ISQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syM-aB-pVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839.20000000000005" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>

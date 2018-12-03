@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../Charts-master/Charts.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../2018.06.15/MyCharts/MyCharts.xcodeproj">
+   </FileRef>
+</Workspace>
